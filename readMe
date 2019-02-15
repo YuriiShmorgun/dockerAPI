@@ -1,0 +1,2 @@
+run local - java -jar  target/spark-api.jar
+build docker - C:\Users\dev\IdeaProjects\dockerAPI>docker build -f Dockerfile -t spark-api-01 .

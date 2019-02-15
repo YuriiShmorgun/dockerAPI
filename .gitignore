@@ -1,0 +1,7 @@
+*.iml
+.idea
+.m2
+settings.xml
+target
+
+*/src/main/java/**/avro/**.java
