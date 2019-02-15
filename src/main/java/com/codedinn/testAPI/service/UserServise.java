@@ -9,12 +9,12 @@ import java.util.List;
 
 public class UserServise {
 
-    String javaHome = System.getenv("FIS");
+    String javaHome = System.getenv("DB_ALIAS");
 
 
     //MongoClient client = new MongoClient("localhost", 82);
     //MongoClient client = new MongoClient("172.17.0.2", 27017);
-    MongoClient client = new MongoClient("my_db", 27017);
+    MongoClient client = new MongoClient(javaHome, 27017);
     Datastore datastore = new Morphia().createDatastore(client, "blog");
 
     public String addpost (Blog blog){
